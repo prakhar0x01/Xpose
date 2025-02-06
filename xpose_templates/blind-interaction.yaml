@@ -1,0 +1,22 @@
+id: custom-headers-interaction
+
+info:
+  name: Custom HTTP Headers Check
+  author: YourName
+  severity: info
+  description: Send request with custom HTTP headers and check for interaction.
+
+requests:
+  - method: GET
+    url: "{{BaseURL}}"
+    headers:
+      X-Forwarded-For: "1.2.3.4"
+      X-Host: "example.com"
+      X-Forwarded-Host: "example.com"
+      Host: "{{Host}}"
+    matchers:
+      - type: regex
+        name: interaction_check
+        regex:
+          - 'Your Custom Header Response'
+        part: body

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Secret Forum{% endblock %}</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0c0c0;
+            background-color: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            padding: 20px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: #ff6666;
+        }
+        .secret {
+            font-weight: bold;
+        }
+        .forum-post {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .forum-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .forum-content {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="width:200px; height:200px;" src="/static/banner.png" alt="Darkweb Forum Banner" class="banner">
+        <h1>Secret Theories Forum</h1>
+        <p>Welcome to the underground space where secrets and theories are discussed.</p>
+    </header>
+    <script src="/static/main.js"></script>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+        <br>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <p>&copy; 2024 Secret Theories Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,987 @@
+
+ ============================= DETAILED BUFFER =============================
+
+
+ ---------- Checking Blind Interaction at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/contact ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:20 GMT
+Content-Type: application/json
+Content-Length: 30
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "Error": "Invalid Host"
+}
+
+ ---------- Checking Downgraded Protocol at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/contact ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:23 GMT
+Content-Type: application/json
+Content-Length: 69
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Downgraded HTTP Protocol",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Without Host Header at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/contact ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:25 GMT
+Content-Type: application/json
+Content-Length: 59
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "No Host Header",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Redirects at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/contact ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:27 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2722
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0c0c0;
+            background-color: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            padding: 20px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: #ff6666;
+        }
+        .secret {
+            font-weight: bold;
+        }
+        .forum-post {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .forum-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .forum-content {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="width:200px; height:200px;" src="/static/banner.png" alt="Darkweb Forum Banner" class="banner">
+        <h1>Secret Theories Forum</h1>
+        <p>Welcome to the underground space where secrets and theories are discussed.</p>
+    </header>
+    <script src="/static/main.js"></script>
+    <div class="container">
+        
+    <h2>Contact Us</h2>
+    <p>If you have sensitive information to share or need to get in touch, please use the following secure communication methods:</p>
+    <ul>
+        <li>Email: <a href="mailto:contact@darkwebforum.com">contact@darkweb.com</a></li>
+        <!--<p>arifakhtar███@gmail.com</p>-->
+        <li>Encrypted Messaging: Use the secure channel available on the hidden service.</li>
+    </ul>
+    <!--<form action=check-size>
+      <input type=text id=full_name name=full_name/>
+      <input type=submit src="/check-size">
+    </form>-->
+
+        <br>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <p>&copy; 2024 Secret Theories Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+ ---------- Checking Lenght Overflow at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/contact ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:30 GMT
+Content-Type: application/json
+Content-Length: 62
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Request Too Large",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Blind Interaction at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/redirect-me ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:33 GMT
+Content-Type: application/json
+Content-Length: 30
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "Error": "Invalid Host"
+}
+
+ ---------- Checking Downgraded Protocol at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/redirect-me ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:37 GMT
+Content-Type: application/json
+Content-Length: 69
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Downgraded HTTP Protocol",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Without Host Header at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/redirect-me ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:39 GMT
+Content-Type: application/json
+Content-Length: 59
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "No Host Header",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Redirects at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/redirect-me ----------
+
+HTTP/1.1 302 FOUND
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:42 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 263
+Location: http://110.235.██████/redirected-path
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="http://110.235.██████/redirected-path">http://110.235.██████/redirected-path</a>. If not, click the link.
+
+ ---------- Checking Lenght Overflow at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/redirect-me ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:45 GMT
+Content-Type: application/json
+Content-Length: 62
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Request Too Large",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Blind Interaction at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/static/main.js ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:48 GMT
+Content-Type: application/json
+Content-Length: 30
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "Error": "Invalid Host"
+}
+
+ ---------- Checking Downgraded Protocol at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/static/main.js ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:███ GMT
+Content-Type: application/json
+Content-Length: 69
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Downgraded HTTP Protocol",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Without Host Header at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/static/main.js ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:54 GMT
+Content-Type: application/json
+Content-Length: 59
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "No Host Header",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Redirects at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/static/main.js ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:56 GMT
+Content-Disposition: inline; filename=main.js
+Content-Type: text/javascript; charset=utf-8
+Content-Length: 153
+Last-Modified: Mon, 02 Sep 2024 13:35:35 GMT
+Cache-Control: no-cache
+ETag: W/"5e42b9ee-759"
+Date: Mon, 23 Sep 2024 18:15:56 GMT
+Connection: close
+
+// Contains sensitive information
+
+const AWS_Access_Key-ID : AKIAIOSFODNN7EXAMPLE
+const AWS_Secret_Access_Key : wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+ ---------- Checking Lenght Overflow at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/static/main.js ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:15:58 GMT
+Content-Type: application/json
+Content-Length: 62
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Request Too Large",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Blind Interaction at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-1 ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:02 GMT
+Content-Type: application/json
+Content-Length: 30
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "Error": "Invalid Host"
+}
+
+ ---------- Checking Downgraded Protocol at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-1 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:07 GMT
+Content-Type: application/json
+Content-Length: 69
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Downgraded HTTP Protocol",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Without Host Header at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-1 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:09 GMT
+Content-Type: application/json
+Content-Length: 59
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "No Host Header",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Redirects at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-1 ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:11 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2███0
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory Details</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0c0c0;
+            background-color: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            padding: 20px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: #ff6666;
+        }
+        .secret {
+            font-weight: bold;
+        }
+        .forum-post {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .forum-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .forum-content {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="width:200px; height:200px;" src="/static/banner.png" alt="Darkweb Forum Banner" class="banner">
+        <h1>Secret Theories Forum</h1>
+        <p>Welcome to the underground space where secrets and theories are discussed.</p>
+    </header>
+    <script src="/static/main.js"></script>
+    <div class="container">
+        
+    <h2>Theory 1: The Hidden Agenda</h2>
+    <div class="forum-content">
+        <p>Detailed information about the Hidden Agenda. Leaked documents and insider information are included.</p>
+        <img src="/static/theory1.png" alt="Theory Image" style="width:100%; height:auto;">
+    </div>
+    <script src="/static/app.js"></script>
+
+        <br>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <p>&copy; 2024 Secret Theories Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+ ---------- Checking Lenght Overflow at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-1 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:14 GMT
+Content-Type: application/json
+Content-Length: 62
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Request Too Large",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Blind Interaction at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-2 ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:18 GMT
+Content-Type: application/json
+Content-Length: 30
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "Error": "Invalid Host"
+}
+
+ ---------- Checking Downgraded Protocol at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-2 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:21 GMT
+Content-Type: application/json
+Content-Length: 69
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Downgraded HTTP Protocol",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Without Host Header at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-2 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:23 GMT
+Content-Type: application/json
+Content-Length: 59
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "No Host Header",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Redirects at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-2 ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:26 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2492
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory Details</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0c0c0;
+            background-color: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            padding: 20px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: #ff6666;
+        }
+        .secret {
+            font-weight: bold;
+        }
+        .forum-post {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .forum-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .forum-content {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="width:200px; height:200px;" src="/static/banner.png" alt="Darkweb Forum Banner" class="banner">
+        <h1>Secret Theories Forum</h1>
+        <p>Welcome to the underground space where secrets and theories are discussed.</p>
+    </header>
+    <script src="/static/main.js"></script>
+    <div class="container">
+        
+    <h2>Theory 2: The Alien Conspiracy</h2>
+    <div class="forum-content">
+        <p>Details about the Alien Conspiracy, including classified files and testimonies.</p>
+        <img src="/static/theory2.png" alt="Theory Image" style="width:100%; height:auto;">
+    </div>
+    <script src="/static/app.js"></script>
+
+        <br>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <p>&copy; 2024 Secret Theories Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+ ---------- Checking Lenght Overflow at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-2 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:28 GMT
+Content-Type: application/json
+Content-Length: 62
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Request Too Large",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Blind Interaction at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-3 ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:32 GMT
+Content-Type: application/json
+Content-Length: 30
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "Error": "Invalid Host"
+}
+
+ ---------- Checking Downgraded Protocol at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-3 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:34 GMT
+Content-Type: application/json
+Content-Length: 69
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Downgraded HTTP Protocol",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Without Host Header at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-3 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:39 GMT
+Content-Type: application/json
+Content-Length: 59
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "No Host Header",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Redirects at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-3 ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2502
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory Details</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0c0c0;
+            background-color: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            padding: 20px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: #ff6666;
+        }
+        .secret {
+            font-weight: bold;
+        }
+        .forum-post {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .forum-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .forum-content {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="width:200px; height:200px;" src="/static/banner.png" alt="Darkweb Forum Banner" class="banner">
+        <h1>Secret Theories Forum</h1>
+        <p>Welcome to the underground space where secrets and theories are discussed.</p>
+    </header>
+    <script src="/static/main.js"></script>
+    <div class="container">
+        
+    <h2>Theory 3: The Financial Elite</h2>
+    <div class="forum-content">
+        <p>Information on the Financial Elite&#39;s covert operations with leaked files and analysis.</p>
+        <img src="/static/theory3.png" alt="Theory Image" style="width:100%; height:auto;">
+    </div>
+    <script src="/static/app.js"></script>
+
+        <br>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <p>&copy; 2024 Secret Theories Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+ ---------- Checking Lenght Overflow at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/theory-3 ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:43 GMT
+Content-Type: application/json
+Content-Length: 62
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Request Too Large",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Blind Interaction at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/ ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:47 GMT
+Content-Type: application/json
+Content-Length: 30
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "Error": "Invalid Host"
+}
+
+ ---------- Checking Downgraded Protocol at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/ ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:50 GMT
+Content-Type: application/json
+Content-Length: 69
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Downgraded HTTP Protocol",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Without Host Header at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/ ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:53 GMT
+Content-Type: application/json
+Content-Length: 59
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "No Host Header",
+  "ip": "110.235.██████"
+}
+
+ ---------- Checking Redirects at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/ ----------
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 3757
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0c0c0;
+            background-color: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            padding: 20px;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: #ff6666;
+        }
+        .secret {
+            font-weight: bold;
+        }
+        .forum-post {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .forum-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .forum-content {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="width:200px; height:200px;" src="/static/banner.png" alt="Darkweb Forum Banner" class="banner">
+        <h1>Secret Theories Forum</h1>
+        <p>Welcome to the underground space where secrets and theories are discussed.</p>
+    </header>
+    <script src="/static/main.js"></script>
+    <div class="container">
+        
+    <h2>Welcome to the Secret Theories Forum</h2>
+    <p>Explore hidden truths and engage in discussions about the world's greatest secrets. Navigate through the links below to dive into classified theories and undisclosed documents.</p>
+    
+    <div class="forum-post">
+        <div class="forum-title"><a href="/theory-1" class="secret">Theory 1: The Hidden Agenda</a></div>
+        <div class="forum-content">
+            <p>Explore the details behind the secret agenda that has been shaping global events for decades. This post reveals classified documents and insider information that has been kept from the public eye.</p>
+        </div>
+    </div>
+
+    <div class="forum-post">
+        <div class="forum-title"><a href="/theory-2" class="secret">Theory 2: The Alien Conspiracy</a></div>
+        <div class="forum-content">
+            <p>Uncover the truth behind the alleged alien encounters and the government's cover-up. Access documents and testimonies that shed light on this otherworldly conspiracy.</p>
+        </div>
+    </div>
+
+    <div class="forum-post">
+        <div class="forum-title"><a href="/theory-3" class="secret">Theory 3: The Financial Elite</a></div>
+        <div class="forum-content">
+            <p>Delve into the world of the financial elite and their covert operations. This post includes leaked files and analysis that expose the hidden machinations behind the global financial system.</p>
+        </div>
+    </div>
+
+    <p>For further inquiries or submissions, please <a href="/contact">contact us</a>.</p>
+    <!--<a href="/redirect-me">Home Page</a>-->
+
+        <br>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <p>&copy; 2024 Secret Theories Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+ ---------- Checking Lenght Overflow at : http://7oze7eos6xjvtbqecmlqyl7v3orzm6tx3empe5kdr5hjapr7rku7k3id.onion/ ----------
+
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.0.1 Python/3.10.12
+Date: Mon, 23 Sep 2024 18:16:58 GMT
+Content-Type: application/json
+Content-Length: 62
+ETag: W/"5e42b9ee-759"
+Connection: close
+
+{
+  "error": "Request Too Large",
+  "ip": "110.235.██████"
+}

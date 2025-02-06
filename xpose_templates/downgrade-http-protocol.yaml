@@ -1,0 +1,21 @@
+id: http-downgrade-ip-reveal
+
+info:
+  name: HTTP Downgrade to HTTP/1.0
+  author: YourName
+  severity: info
+  description: Send an HTTP request with HTTP/1.0 protocol and check for IP reveal in response.
+
+requests:
+  - method: GET
+    url: "{{BaseURL}}"
+    headers:
+      Host: "{{Host}}"
+      Connection: close
+    protocol: http/1.0
+    matchers:
+      - type: regex
+        name: ip_reveal
+        regex:
+          - '\b(\d{1,3}\.){3}\d{1,3}\b' # Matches IP addresses
+        part: body

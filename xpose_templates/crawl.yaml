@@ -1,0 +1,19 @@
+id: crawl-urls
+
+info:
+  name: Crawl URLs
+  author: YourName
+  severity: info
+  description: Crawl the given URL and return all URLs with the same base URL.
+
+requests:
+  - method: GET
+    url: "{{BaseURL}}"
+    extractors:
+      - type: regex
+        name: urls
+        group: 0
+        regex:
+          - '(?i)href=["\'](http[s]?://{{BaseURL}}[^"\']+)'
+          - '(?i)src=["\'](http[s]?://{{BaseURL}}[^"\']+)'
+        part: body

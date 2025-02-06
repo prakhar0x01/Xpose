@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Theory Details{% endblock %}
+
+{% block content %}
+    <h2>{{ theory_title }}</h2>
+    <div class="forum-content">
+        <p>{{ theory_content }}</p>
+        <img src="/static/{{ theory_image }}" alt="Theory Image" style="width:100%; height:auto;">
+    </div>
+    <script src="/static/app.js"></script>
+{% endblock %}

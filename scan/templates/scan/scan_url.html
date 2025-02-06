@@ -1,0 +1,85 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}New Scan{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Start a New Scan</h2>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="url" class="form-label">Onion Site URL:</label>
+                <input type="url" name="url" id="url" class="form-control" placeholder="Enter the Onion URL" required>
+            </div>
+            <div class="mb-3">
+                <label for="collaborator_url" class="form-label">Collaborator:<i>(Optional)</i></label>
+                <input type="text" name="collaborator_url" id="collaborator_url" class="form-control" placeholder="Enter collaborator server">
+            </div>
+            <button type="submit" class="btn btn-primary">Start Scan</button>
+        </form>
+        {% if output %}
+            <h3>Scan Progress</h3>
+            <pre id="output">{{ output }}</pre>
+            <a href="{{ result_url }}" class="btn btn-info">View Detailed Output</a>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        background-color: #ECDFCC;
+    }
+    .card-header {
+        background-color: #3C3D37;
+        color: #ECDFCC;
+        border-radius: 15px 15px 0 0;
+        font-weight: 700;
+    }
+    .card-body {
+        margin-top: 1rem;
+    }
+    .form-label {
+        color: #1E201E;
+        font-weight: 600;
+    }
+    .form-control {
+        border-color: #697565;
+        border-radius: 5px;
+    }
+    .form-control:focus {
+        border-color: #3C3D37;
+        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+        background-color: #697565;
+        border-color: #697565;
+    }
+    .btn-primary:hover {
+        background-color: #565c53;
+        border-color: #4d5348;
+    }
+    .btn-info {
+        background-color: #3C3D37;
+        border-color: #3C3D37;
+        color: #ECDFCC;
+    }
+    .btn-info:hover {
+        background-color: #2a2b27;
+        border-color: #2a2b27;
+    }
+    pre {
+        background-color: #1E201E;
+        color: #ECDFCC;
+        padding: 1rem;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+{% endblock %}
+

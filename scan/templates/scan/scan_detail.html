@@ -1,0 +1,54 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Scan Detail{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Scan Detail</h2>
+    </div>
+    <div class="card-body">
+        <h3>Scan Output</h3>
+        <pre>{{ scan.output }}</pre>
+        <a href="/scan/new" class="btn btn-primary">Start New Scan</a>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        background-color: #ECDFCC;
+    }
+    .card-header {
+        background-color: #3C3D37;
+        color: #ECDFCC;
+        border-radius: 15px 15px 0 0;
+        font-weight: 700;
+    }
+    .card-body {
+        margin-top: 1rem;
+    }
+    h3 {
+        color: #1E201E;
+        margin-bottom: 1rem;
+    }
+    pre {
+        background-color: #1E201E;
+        color: #ECDFCC;
+        padding: 1rem;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .btn-primary {
+        background-color: #697565;
+        border-color: #697565;
+    }
+    .btn-primary:hover {
+        background-color: #565c53;
+        border-color: #4d5348;
+    }
+</style>
+{% endblock %}
+

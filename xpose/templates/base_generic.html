@@ -1,0 +1,31 @@
+<!-- templates/base_generic.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpose</title>
+    <link rel="stylesheet" href="{% static 'scan/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Xpose</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'scan:index' %}">Home</a></li>
+                <li><a href="{% url 'scan:scan_url' %}">New Scan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <!-- Content specific to each page will go here -->
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Xpose</p>
+    </footer>
+</body>
+</html>
+
