@@ -42,7 +42,7 @@ Additionally, modern fingerprinting techniques are used to analyze the behavior 
 6. **Target Site Exploitation**: Techniques like exploiting recent 0-days, Local File Inclusion (LFI) vulnerabilities, and Server-Side Request Forgery (SSRF) to disclose actual IP addresses.
 
 ### Proof Of Concept
-[VIDEO POC](https://drive.google.com/file/d/1G7YE6_-aL_-CqsuW_Goe2ALyuvi5tebQ/view?usp=sharing)
+[VIDEO POC](https://drive.google.com/file/d/14LIEzJmlQyBu_BjXFTkY7GBJszjAbElg/view?usp=sharing)
 
 ### Tech Stack Used
 
